@@ -12,6 +12,11 @@
     <Content Include="wwwroot\assets\sass\modules\homepage.scss" />
     <Content Include="wwwroot\assets\sass\site.scss" />
     <Content Include="wwwroot\assets\sass\stylesheet\colours.scss" />
+    <Content Include="wwwroot\assets\sass\_modules.scss" />
+    <Content Include="wwwroot\assets\stylesheets\icons\css-circular-prog-bar.css" />
+    <Content Include="wwwroot\assets\stylesheets\icons\font-awersome.min.css" />
+    <Content Include="wwwroot\assets\stylesheets\vendor\font-awersome.css" />
+    <Content Include="wwwroot\assets\stylesheets\vendor\font-awersome.min.css" />
     <Content Include="wwwroot\assets\stylesheets\vendor\unsemantic-grid-responsive-tablet.css" />
   </ItemGroup>
   <ItemGroup>
@@ -21,6 +26,7 @@
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.2" />
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.2" />
     <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.2" />
+    <PackageReference Include="System.IO.FileSystem.DriveInfo" Version="4.3.0" />
   </ItemGroup>
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />

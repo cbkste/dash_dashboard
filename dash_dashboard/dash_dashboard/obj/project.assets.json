@@ -2313,6 +2313,36 @@
           "ref/netstandard1.3/System.IO.FileSystem.dll": {}
         }
       },
+      "System.IO.FileSystem.DriveInfo/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "System.Collections": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.IO.FileSystem": "4.3.0",
+          "System.IO.FileSystem.Primitives": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Runtime.Handles": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Threading.Tasks": "4.3.0",
+          "runtime.native.System": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.IO.FileSystem.DriveInfo.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.IO.FileSystem.DriveInfo.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard1.3/System.IO.FileSystem.DriveInfo.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
       "System.IO.FileSystem.Primitives/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -6630,6 +6660,46 @@
         "system.io.filesystem.nuspec"
       ]
     },
+    "System.IO.FileSystem.DriveInfo/4.3.0": {
+      "sha512": "G5mdrArPM927DRs1fYqUzMYH9JW+fjEHtdawypg05hpkoeFI0nrqDJ8mcZCQheRoD+79K68b06esyxXnt7RxhA==",
+      "type": "package",
+      "path": "system.io.filesystem.driveinfo/4.3.0",
+      "files": [
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.IO.FileSystem.DriveInfo.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.IO.FileSystem.DriveInfo.dll",
+        "ref/netstandard1.3/System.IO.FileSystem.DriveInfo.dll",
+        "ref/netstandard1.3/System.IO.FileSystem.DriveInfo.xml",
+        "ref/netstandard1.3/de/System.IO.FileSystem.DriveInfo.xml",
+        "ref/netstandard1.3/es/System.IO.FileSystem.DriveInfo.xml",
+        "ref/netstandard1.3/fr/System.IO.FileSystem.DriveInfo.xml",
+        "ref/netstandard1.3/it/System.IO.FileSystem.DriveInfo.xml",
+        "ref/netstandard1.3/ja/System.IO.FileSystem.DriveInfo.xml",
+        "ref/netstandard1.3/ko/System.IO.FileSystem.DriveInfo.xml",
+        "ref/netstandard1.3/ru/System.IO.FileSystem.DriveInfo.xml",
+        "ref/netstandard1.3/zh-hans/System.IO.FileSystem.DriveInfo.xml",
+        "ref/netstandard1.3/zh-hant/System.IO.FileSystem.DriveInfo.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netstandard1.3/System.IO.FileSystem.DriveInfo.dll",
+        "runtimes/win/lib/net46/System.IO.FileSystem.DriveInfo.dll",
+        "runtimes/win/lib/netstandard1.3/System.IO.FileSystem.DriveInfo.dll",
+        "runtimes/win7/lib/netcore50/_._",
+        "system.io.filesystem.driveinfo.4.3.0.nupkg.sha512",
+        "system.io.filesystem.driveinfo.nuspec"
+      ]
+    },
     "System.IO.FileSystem.Primitives/4.3.0": {
       "sha512": "6QOb2XFLch7bEc4lIcJH49nJN2HV+OC3fHDgsLVsBVBk3Y4hFAnOBGzJ2lUu7CyDDFo9IBWkSsnbkT6IBwwiMw==",
       "type": "package",
@@ -9766,7 +9836,8 @@
       "Microsoft.AspNetCore.StaticFiles >= 1.1.2",
       "Microsoft.Extensions.Logging.Debug >= 1.1.2",
       "Microsoft.NETCore.App >= 1.1.2",
-      "Microsoft.VisualStudio.Web.BrowserLink >= 1.1.2"
+      "Microsoft.VisualStudio.Web.BrowserLink >= 1.1.2",
+      "System.IO.FileSystem.DriveInfo >= 4.3.0"
     ]
   },
   "packageFolders": {
@@ -9799,6 +9870,10 @@
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "1.1.2"
+          },
+          "System.IO.FileSystem.DriveInfo": {
+            "target": "Package",
+            "version": "4.3.0"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",

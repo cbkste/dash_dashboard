@@ -1,0 +1,13 @@
+﻿@model dash_dashboard.ViewModel.CircularProgress
+
+@{
+    var cssclass = "p" + Model.Percentage;
+}
+
+<div class="c100 @cssclass @Model.CssClass">
+    <span>@Model.Percentage%</span>
+    <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+    </div>
+</div>

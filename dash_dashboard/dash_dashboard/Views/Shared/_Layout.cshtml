@@ -8,7 +8,6 @@
 
     <environment names="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment names="Staging,Production">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -18,31 +17,32 @@
     </environment>
 
     <link rel="stylesheet" href="~/assets/stylesheets/site.min.css" />
+    <link rel="stylesheet" href="~/assets/stylesheets/vendor/unsemantic-grid-responsive-tablet.css" />
+    <link rel="stylesheet" href="~/assets/stylesheets/icons/css-circular-prog-bar.css" />
+
+    <!--[FontAwesome Icons]-->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+          rel="stylesheet" type='text/css'>
 
     @Html.Raw(JavaScriptSnippet.FullScript)
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">dash_dashboard</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-ation="Index">Home</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container body-content">
+    @Html.Partial("Header")
+
+    @if (IsSectionDefined("UseFullContainerWidth"))
+    {
+        @RenderSection("UseFullContainerWidth", false)
         @RenderBody()
-        <hr />
+    }
+    else
+    {
+        <div class="grid-container grid-100">
+            <section role="region" aria-label="main body content" class="l-content-container l-body-section-filled l-article-container grid-100 mobile-grid-100 grid-parent content">
+                @RenderBody()
+            </section>
+        </div>
+    }
+    <div>
         <footer>
             <p>&copy; 2017 - dash_dashboard</p>
         </footer>

@@ -1,16 +1,93 @@
-﻿.homepage-image {
-    padding: 0px 10px 0px 10px;
-    background: #8f2d56 no-repeat scroll center center;
-    background-size: cover;
-    height: 600px;
+﻿.gradient-background {
+    //background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%), linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%), linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    background: #092756;
+    background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top, rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top, rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg, #670d10 0%,#092756 100%);
+    background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top, rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -o-linear-gradient(-45deg, #670d10 0%,#092756 100%);
+    background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top, rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg, #670d10 0%,#092756 100%);
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom, rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg, #670d10 0%,#092756 100%);
+    height: 1080px;
+}
 
-    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        /* IE10+ CSS styles go here */
-        background-attachment: scroll;
+.profile-image-name {
+    background: rgb(37,52,75);
+    height: 250px;
+    padding: 0px;
+
+    img {
+        height: 125px;
+        width: 125px;
+        display: block;
+        margin: 0 auto;
     }
 
-    @supports (-ms-accelerator:true) {
-        /* IE Edge 12+ CSS styles go here */
-        background-attachment: scroll;
+    p {
+        color: white;
+        text-align: center;
+    }
+}
+
+.top-bar {
+    margin-top: 20px;
+    min-height: 250px;
+
+    h1 {
+        color: white;
+        margin-top: 0px;
+    }
+
+    .today, .yesterday, .date {
+        h4 {
+            color: white;
+        }
+    }
+
+    p {
+        color: white;
+    }
+
+    .today {
+        background: rgb(51,57,79);
+    }
+
+    .yesterday {
+        background: rgb(42,56,91);
+    }
+
+    .date {
+        background: rgb(42,56,91);
+    }
+
+    .icon-home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    .todays-infomation {
+        padding-top: 20px;
+    }
+}
+
+.header {
+    background: #092756;
+    background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top, rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top, rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg, #670d10 0%,#092756 100%);
+    background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top, rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -o-linear-gradient(-45deg, #670d10 0%,#092756 100%);
+    background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top, rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg, #670d10 0%,#092756 100%);
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom, rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg, #670d10 0%,#092756 100%);
+
+    .top-right-bar {
+        text-align: right;
+        color: white;
+    }
+
+    .top-profile {
+       // background: rgb(66,85,102);
+    }
+
+    .top-left-bar {
+       // background: rgb(66,86,111);
     }
 }

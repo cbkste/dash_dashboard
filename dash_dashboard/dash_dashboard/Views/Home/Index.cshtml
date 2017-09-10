@@ -1,7 +1,65 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model dash_dashboard.ViewModel.DashboardViewModel
+
+@using dash_dashboard.ViewModel
+@{
+    ViewData["Title"] = "Dashboard";
 }
 
-<div class="grid-100">
+@section UseFullContainerWidth { <!-- Use full width layout --> }
 
+<div class="grid-100 gradient-background">
+    <div class="grid-container grid-100 tablet-grid-100 mobile-grid-100 container">
+        <div class="grid-20">
+            <div class="profile-image-name">
+                <img src="~/images/logo.png">
+                <p>Name</p>
+                <p>Position</p>
+            </div>
+            <h3>Name</h3>
+            <h3>Name</h3>
+        </div>
+        <div class="grid-80 top-bar">
+            <div class="grid-40">
+                <div class="grid-20">
+                    <i class="fa fa-4x fa-home" aria-hidden="true"></i>
+                </div>
+                <div class="grid-80">
+                    <h1>Dashboard</h1>
+                    <p>Home > Dashboard</p>
+                </div>
+            </div>
+            <div class="grid-60">
+                <div class="grid-20 today">
+                    <h4>Today</h4>
+                </div>
+                <div class="grid-20 suffix-5 yesterday">
+                    <h4>Yesterday</h4>
+                </div>
+                <div class="grid-55 date">
+                    <h4>3rd September, 2017</h4>
+                </div>
+            </div>
+            <div class="grid-100 todays-infomation">
+                <div class="grid-25">
+                    <h1>Todays Infomation</h1>
+                </div>
+                <div class="grid-75">
+                    <div class="grid-33">
+                        @Html.Partial("CircularProgress", new CircularProgress(89))
+                        <p>Total Traffic</p>
+                    </div>
+                    <div class="grid-33">
+                        @Html.Partial("CircularProgress", new CircularProgress(3))
+                        <p>Total Traffic</p>
+                    </div>
+                    <div class="grid-33">
+                        @Html.Partial("CircularProgress", new CircularProgress(22))
+                        <p>Total Traffic</p>
+                    </div>
+            </div>
+                @Model.Process
+                @Model.Disk
+        </div>
+        </div>
+    </div>
 </div>

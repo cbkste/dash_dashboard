@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using dash_dashboard.Service;
 
 namespace dash_dashboard
 {
@@ -29,6 +30,8 @@ namespace dash_dashboard
         {
             // Add framework services.
             services.AddMvc();
+
+            services.AddSingleton<ISystemService, SystemService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
